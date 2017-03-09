@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 
     <!-- local style -->
-    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 
     <!-- google fonts -->
     <link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
@@ -23,7 +23,8 @@
   <!-- begin body -->
   <body>
 
-
+<!-- add container for nav -->
+<div class="container-fluid">
 
     <!-- begin nav -->
     <nav class="navbar navbar-toggleable-md sticky-top navbar-light bg-faded">
@@ -45,32 +46,37 @@
         </ul>
       </div>
     </nav>
-    <!-- end nav -->
+    <!-- end container -->
+</div>
 
-
+<!-- header image -->
   <div class="container-fluid">
-
-    <!-- header image -->
-    <div class="wrap">
-      <div class="inner text-center">
-        <img src="/img/cpope_logo_light.png" alt="logo" class="img-fluid">
-        <h2>Corinn Pope</h2>
-        <!-- have this one as h1 for seo purposes -->
-        <h1>Full-Stack Web Developer</h1>
-      </div>
-    </div>
-
+    <header>
+	    <div class="wrap">
+	      <div class="inner text-center">
+	        <img src="img/cpope_logo.png" alt="logo" class="img-fluid">
+	        <h2>Corinn Pope</h2>
+	        <!-- have this one as h1 for seo purposes -->
+	        <h1>Full-Stack Web Developer</h1>
+	      </div>
+	    </div>
+    </header>
+    <!-- end container -->
+    <!-- Question: Do I really have to wrap an <hr> tag in a container if it is just seperating sections?? -->
+    <hr>
+  </div>
 
     <!-- add down arrow -->
-    <div class="text-center arrow-down">
+<!--     <div class="text-center arrow-down">
       <a href="#portfolio"><i class="fa fa-arrow-down" aria-hidden="true"></i></a>
-    </div>
+    </div> -->
+
 
     <!-- portfolio section -->
     <!-- TODO - add portfolio items as time progresses -->
-    <section id="portfolio">
-      <div class="container-fluid">
-        
+    <div class="container-fluid">
+      <main>    
+      <section id="portfolio">
         <div class="row">
           <div class="col-md-12">
             <h2 class="text-center">Portfolio</h2>
@@ -79,39 +85,46 @@
 
         <div class="row">
         <!-- box 1 -->
+<!-- adding <article> tags here screws up the hover effect, so I nixed adding it. tried though.  -->
           <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
             <div class="hovereffect">
-              <img src="/img/1.jpg" alt="placeholder" class="img-fluid">
+              <img src="img/ipro.png" alt="placeholder" class="img-fluid">
               <div class="overlay">
                 <h2>InformaticsPro</h2>
-                <p>Built With HTML/CSS</p>
                 <p><a href="http://www.informaticspro.com">Go</a></p> 
+                <p>Built With HTML/CSS</p>
               </div>
             </div>
           </div>
+
 
           <!-- box 2 -->
+
           <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
             <div class="hovereffect">
-            <img src="/img/2.jpg" alt="placeholder" class="img-fluid">
+            <img src="img/tactic_taco.png" alt="placeholder" class="img-fluid">
               <div class="overlay">
                 <h2>Tactic Taco</h2>
-                <p>Built With Ruby on Rails</p>
                 <p><a href="http://www.tactictaco.com">Go</a></p> 
+                <p>Built With Ruby on Rails</p>
               </div>
             </div>
           </div>
 
+
           <!-- box 3 -->
+
           <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
             <div class="hovereffect">
-            <img src="/img/3.jpg" alt="placeholder" class="img-fluid">
+            <img src="img/image-class.png" alt="placeholder" class="img-fluid">
               <div class="overlay">
-                <h2>Placeholder Project</h2>
-                <p><a href="#">Placeholder Link</a></p> 
+              	<h2>DL Image Classification</h2>
+                <p><a href="https://github.com/corinnpope/dl-image-classification">Go</a></p> 
+                <p>Built Using TensorFlow</p>
               </div>
             </div>
           </div>
+
 
           <!-- end row -->
         </div>
@@ -120,102 +133,113 @@
         <div class="row">
 
           <!-- box 4 -->
+
           <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
             <div class="hovereffect">
-            <img src="/img/3.jpg" alt="placeholder" class="img-fluid">
+            <img src="img/3.jpg" alt="placeholder" class="img-fluid">
               <div class="overlay">
                 <h2>Placeholder Project</h2>
                 <p><a href="#">Placeholder Link</a></p> 
               </div>
             </div>
           </div>
+          </article>
 
           <!-- box 5 -->
+
           <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
             <div class="hovereffect">
-            <img src="/img/3.jpg" alt="placeholder" class="img-fluid">
+            <img src="img/3.jpg" alt="placeholder" class="img-fluid">
               <div class="overlay">
                 <h2>Placeholder Project</h2>
                 <p><a href="#">Placeholder Link</a></p> 
               </div>
             </div>
           </div>
+
 
           <!-- box 6 -->
+
           <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
             <div class="hovereffect">
-            <img src="/img/3.jpg" alt="placeholder" class="img-fluid">
+            <img src="img/3.jpg" alt="placeholder" class="img-fluid">
               <div class="overlay">
                 <h2>Placeholder Project</h2>
                 <p><a href="#">Placeholder Link</a></p> 
               </div>
             </div>
           </div>
+
           <!-- end row -->
         </div>
-        <!-- end container -->
-      </div>
-    </section>
-    <!-- end portfolio section -->
+        </main>
+      <!-- end portfolio section -->
+      </section>
+    <hr>
+    <!-- end container -->
+    </div>
 
+    <div class="container-fluid">
       <!-- about section -->
-    <section id="about" class="about">
-      <div class="row">
-        <div class="col-md-12">
-          <h2 class="text-center">About Me</h2>
-        </div>
-      </div>
+	    <section id="about" class="about">
+	      <div class="row">
+	        <div class="col-md-12">
+	          <h2 class="text-center">About Me</h2>
+	        </div>
+	      </div>
 
-      <div class="row">
-        <div class="col-md-8">
-          <p>An analytical mind and a passion for creating things drew me into the field of web development. I've always loved going from nothing but an idea to a site people can interact with and find use in. Hence, why I find personal and professional fulfillment in programming.</p> 
-          <p>My skills include HTML/CSS/JS, Ruby on Rails, and Python. In addition to my technical skills, I have a base knowledge of design concepts, am proficient in graphic design using Photoshop and Illustrator, and have picked up some basic digital marketing skills (CPC, content marketing, SEO, SMM, etc.). </p>
-          <p>I have also co-authored a book title "Clinical Informatics Board Review: Pass the Exam the First Time," managed technical projects of various sizes, and built a business starting with nothing in to a sustainable income stream. So I guess you could say I have a breadth of knowledge in many subjects but a deep understanding of and interest in web development. </p>
-          <p>I received my Bachelor's degree from James Madison University in Integrated Science and Technology and my Master's degree from the University of Maryland – University College in Technology Management. In addition, I am currently enrolled in Udacity's Full-Stack Web Developer Nanodegree and also have my PMP certification.</p>
-          <p>When I'm not building websites and applications, you can find me out on the trails doing some running, reading, or hanging out at the beach.</p>
-        </div>
-        <div class="col-md-4">
-            <img src="/img/cartoon.jpg" alt="headshot" class="img-fluid">
-        </div>
-      </div>
-    </section>
+	      <div class="row">
+	        <div class="col-md-8">
+	          <p>An analytical mind and a passion for creating things drew me into the field of web development. I've always loved going from nothing but an idea to a site people can interact with and find use in. Hence, why I find personal and professional fulfillment in programming.</p> 
+	          <p>My skills include HTML/CSS/JS, Ruby on Rails, and Python. In addition to my technical skills, I have a base knowledge of design concepts, am proficient in graphic design using Photoshop and Illustrator, and have picked up some basic digital marketing skills (CPC, content marketing, SEO, SMM, etc.). </p>
+	          <p>I have also co-authored a book title "Clinical Informatics Board Review: Pass the Exam the First Time," managed technical projects of various sizes, and built a business starting with nothing in to a sustainable income stream. So I guess you could say I have a breadth of knowledge in many subjects but a deep understanding of and interest in web development. </p>
+	          <p>I received my Bachelor's degree from James Madison University in Integrated Science and Technology and my Master's degree from the University of Maryland – University College in Technology Management. In addition, I am currently enrolled in Udacity's Full-Stack Web Developer Nanodegree and also have my PMP certification.</p>
+	          <p>When I'm not building websites and applications, you can find me out on the trails doing some running, reading, or hanging out by the water.</p>
+	        </div>
+	        <div class="col-md-4">
+	            <img src="img/cartoon.jpg" alt="headshot" class="img-fluid">
+	        </div>
+	      </div>
+	    </section>
     <!-- end about section -->
-
     <!-- hr between sections -->
     <hr>
+    </div>
+    <!-- end container -->
+
+
 
     <!-- contact section -->
-    <section id="contact" class="contact">
       <div class="container">
+      	<section id="contact" class="contact">
+	        <div class="row">
+	          <div class="col-md-12">
+	            <h2 class="text-center">Contact Info</h2>
+	          </div>
+	        </div>
 
-        <div class="row">
-          <div class="col-md-12">
-            <h2 class="text-center">Contact Info</h2>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col">
-            <p> Getting a hold of me is simple. Just reach out to me at any time via email at corinn.pope [at] gmail [dot] com.</p>
-            <p>You can also check out my various interwebz profiles:</p>
-              <a href="https://www.github.com/corinnpope"><i class="fa fa-github fa-3x"></i></a>
-              <a href="https://stackoverflow.com/users/1956290/nniroclax"><i class="fa fa-stack-overflow fa-3x"></i></a>                    
-              <a href="https://www.linkedin.com/in/corinnpope/"><i class="fa fa-linkedin fa-3x"></i></a>
-              <a href="https://www.twitter.com/nniroc"><i class="fa fa-twitter fa-3x"></i></a>
-              <a href="https://s3-us-west-2.amazonaws.com/cpopefiles/C_Pope_Resume.pdf"><i class="fa fa-file-text fa-3x"></i></a>
-          </div>
-        </div>
-
-      </div>
-    </section>
+	        <div class="row">
+	          <div class="col">
+	            <p> Getting a hold of me is simple. Just reach out to me at any time via email at corinn.pope [at] gmail [dot] com. I'm based in Austin, TX and would love to chat about any local or remote opportunities.</p>
+	            <p>You can also check out my various interwebz profiles:</p>
+	              <a href="https://www.github.com/corinnpope" target="_blank"><i class="fa fa-github fa-3x"></i></a>
+	              <a href="https://stackoverflow.com/users/1956290/nniroclax" target="_blank"><i class="fa fa-stack-overflow fa-3x"></i></a>                    
+	              <a href="https://www.linkedin.com/in/corinnpope/" target="_blank"><i class="fa fa-linkedin fa-3x"></i></a>
+	              <a href="https://www.twitter.com/nniroc" target="_blank"><i class="fa fa-twitter fa-3x"></i></a>
+	              <a href="https://s3-us-west-2.amazonaws.com/cpopefiles/C_Pope_Resume.pdf" target="_blank"><i class="fa fa-file-text fa-3x"></i></a>
+	          </div>
+	        </div>
     <!-- end contact section -->
+	    </section>
+	  <!-- end container -->
+	  </div>
 
+
+	<div class="container-fluid">
     <!-- footer -->
-    <footer class="footer">
-        <span class="text-muted">Copyright 2017 Corinn Pope</span>
-    </footer>
-    <!-- end footer -->
-
+	    <footer class="footer">
+	        <span class="text-muted">Copyright 2017 Corinn Pope</span>
+	    </footer>
     </div>
 
   <!-- Scripts and such -->
